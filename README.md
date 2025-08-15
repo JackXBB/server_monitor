@@ -17,7 +17,7 @@ server_monitoring.sh
 📂 目录结构  
 ├── server_monitoring.sh               # 主监控脚本  
 ├── install_server_monitoring.sh       # 自动化部署/卸载监控脚本  
-├── monitor.conf                       # 可配置项
+├── monitor.conf                       # 可配置项          
 └── log/  
     ├── *.log                          # 各功能日志  
     ├── archive/                       # 旧日志压缩包  
@@ -35,5 +35,5 @@ I/O 过载        iotop / pidstat / vmstat 排查瓶颈
 系统温度        lm-sensors 检测，超温即告警  
 日志分析        journalctl / auth.log 分析（SSH 失败等）  
 僵尸进程        检测 + SIGCHLD 处理，必要时重启容器   
-日志清理        旧日志压缩/删除，每日生成摘要
+日志清理        旧日志压缩/删除，每日生成摘要   
 文件清理        按文件夹总容量来判断是否需要清理，按日期排序文件，逐步清理文件直到释放足够的空间
